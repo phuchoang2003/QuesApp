@@ -1,0 +1,16 @@
+
+n
+java:S1192"QDefine a constant instead of duplicating this literal "application/json" 4 times.(ªŞÃı8êŞÀâ1
+b
+java:S1192 "FDefine a constant instead of duplicating this literal "UTF-8" 4 times.(ç›Ï8êŞÀâ1
+s
+java:S1192q"QDefine a constant instead of duplicating this literal "Subject with id " 3 times.(™éÿÿÿÿÿ8êŞÀâ1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÁŒ]8“êŞÀâ1
+
+java:S1989)"{Handle the following exceptions that could be thrown by "readValue": IOException, JsonParseException, JsonMappingException.(…ø…úÿÿÿÿ8ÎêŞÀâ1
+r
+java:S1989)"PHandle the following exception that could be thrown by "getReader": IOException.(…ø…úÿÿÿÿ8ÎêŞÀâ1
+
+java:S1989‡"{Handle the following exceptions that could be thrown by "readValue": IOException, JsonParseException, JsonMappingException.(¿‰âæüÿÿÿÿ8ŞêŞÀâ1
+s
+java:S1989‡"PHandle the following exception that could be thrown by "getReader": IOException.(¿‰âæüÿÿÿÿ8ßêŞÀâ1

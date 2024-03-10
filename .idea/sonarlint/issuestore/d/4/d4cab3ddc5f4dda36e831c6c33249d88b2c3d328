@@ -1,0 +1,12 @@
+
+n
+java:S1192"QDefine a constant instead of duplicating this literal "application/json" 4 times.(ªŞÃı8§Å×Àâ1
+b
+java:S1192"FDefine a constant instead of duplicating this literal "UTF-8" 4 times.(ç›Ï8¨Å×Àâ1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÁŒ]8±Å×Àâ1
+
+java:S1989#"{Handle the following exceptions that could be thrown by "readValue": IOException, JsonParseException, JsonMappingException.(Îş®İøÿÿÿÿ8³Æ×Àâ1
+r
+java:S1989#"PHandle the following exception that could be thrown by "getReader": IOException.(Îş®İøÿÿÿÿ8´Æ×Àâ1
+V
+java:S2130H"9Use "Integer.parseInt" for this string-to-int conversion.(Ù‹”ÿ8äÆ×Àâ1
