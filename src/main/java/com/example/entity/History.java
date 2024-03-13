@@ -13,6 +13,11 @@ public class History {
     private LocalDateTime startTime;
     private LocalDateTime endTime;
 
+    @Override
+    public String toString() {
+        return "{idHistory: " + idHistory + " idUser: " + idUser + " idResult: " + idResult + " startTime: " + startTime + " endTime: " +endTime;
+    }
+
     public int getIdUser() {
         return idUser;
     }

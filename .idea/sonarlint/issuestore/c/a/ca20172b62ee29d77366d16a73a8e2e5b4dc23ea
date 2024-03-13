@@ -6,11 +6,25 @@ java:S1192 "FDefine a constant instead of duplicating this literal "UTF-8" 4 ti
 s
 java:S1192q"QDefine a constant instead of duplicating this literal "Subject with id " 3 times.(™éÿÿÿÿÿ8êŞÀâ1
 u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÁŒ]8“êŞÀâ1
+y
+java:S1989$"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(ó¿´ïûÿÿÿÿ8¡Ï„Áâ1
 
 java:S1989)"{Handle the following exceptions that could be thrown by "readValue": IOException, JsonParseException, JsonMappingException.(…ø…úÿÿÿÿ8ÎêŞÀâ1
 r
 java:S1989)"PHandle the following exception that could be thrown by "getReader": IOException.(…ø…úÿÿÿÿ8ÎêŞÀâ1
+y
+java:S1989-"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(ØÒÌÔşÿÿÿÿ8¦Ï„Áâ1
+y
+java:S19896"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(ààôØúÿÿÿÿ8¨Ï„Áâ1
+t
+java:S1989:"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(„Î×œ8©Ï„Áâ1
+t
+java:S1989\"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(„Î×œ8°Ï„Áâ1
+y
+java:S1989z"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(¦£Ä³øÿÿÿÿ8·Ï„Áâ1
 
 java:S1989‡"{Handle the following exceptions that could be thrown by "readValue": IOException, JsonParseException, JsonMappingException.(¿‰âæüÿÿÿÿ8ŞêŞÀâ1
 s
 java:S1989‡"PHandle the following exception that could be thrown by "getReader": IOException.(¿‰âæüÿÿÿÿ8ßêŞÀâ1
+u
+java:S1989"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(ÙŞı“8ÁÏ„Áâ1

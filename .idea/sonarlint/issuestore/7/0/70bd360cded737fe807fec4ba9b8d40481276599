@@ -1,0 +1,10 @@
+
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¡ùå]8ÍœÑ¡‚1
+o
+java:S1989"RHandle the following exception that could be thrown by "handleLogin": IOException.(¸–úÜ8ß–Ñ¡‚1
+Ö
+java:S1989"hHandle the following exceptions that could be thrown by "handleRegister": IOException, ServletException.(ÊÆ¢·8©–Ñ¡‚1
+t
+java:S1989"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(πÁ≤8©–Ñ¡‚1
+î
+java:S1130<"wRemove the declaration of thrown exception 'javax.servlet.ServletException', as it cannot be thrown from method's body.(‡∫¿∞8¥–Ñ¡‚1

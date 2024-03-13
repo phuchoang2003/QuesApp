@@ -10,6 +10,11 @@ public class Exam {
     private int idSubject;
     private String nameExam;
 
+    @Override
+    public String toString() {
+        return "{idExam: " + idExam + " timeLimit: " + timeLimit + " idSubject: " + idSubject + " nameExam: " +nameExam;
+    }
+
     public Exam() {
     }
 

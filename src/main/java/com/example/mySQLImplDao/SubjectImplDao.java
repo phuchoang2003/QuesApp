@@ -1,5 +1,9 @@
 package com.example.mySQLImplDao;
 
+import com.example.CustomExceptionHandling.CreatingFailedSubject;
+import com.example.CustomExceptionHandling.DeleteFailedSubject;
+import com.example.CustomExceptionHandling.NotFoundSubject;
+import com.example.CustomExceptionHandling.UpdateFailedSubject;
 import com.example.DataSource.ConnectionPool;
 import com.example.dao.SubjectDao;
 import com.example.entity.Exam;
@@ -35,8 +39,7 @@ public class SubjectImplDao implements SubjectDao {
             }
 
         } catch (Exception e) {
-            e.printStackTrace();
-            throw new RuntimeException("Error finding subjects corresponding to exam due to a database error", e);
+            throw new NotFoundSubject("Error finding subjects corresponding to exam",e);
         }
 
         return subjects;
@@ -59,7 +62,7 @@ public class SubjectImplDao implements SubjectDao {
                 }
             }
         } catch (Exception e) {
-            throw new RuntimeException("Error finding subjects by id user due to a database error", e);
+            throw new NotFoundSubject("Error finding all subjects by User's id: " + idUser,e);
         }
 
         return subjects;
@@ -86,7 +89,10 @@ public class SubjectImplDao implements SubjectDao {
                 }
             }
         } catch (SQLException e) {
-            throw new RuntimeException("Error creating subject due to a database error", e);
+            throw new CreatingFailedSubject("Creating failed subject: " + subject, e);
+        }
+        catch(Exception e){
+            throw new CreatingFailedSubject(e.getMessage(),e);
         }
         return subject;
     }
@@ -107,7 +113,7 @@ public class SubjectImplDao implements SubjectDao {
                 }
             }
         } catch (Exception e) {
-            throw new RuntimeException("Error finding subject by id due to a database error", e);
+            throw new NotFoundSubject("Error finding subject by Subject's id: " + id,e);
         }
 
         return subject;
@@ -134,7 +140,7 @@ public class SubjectImplDao implements SubjectDao {
             }
 
         } catch (Exception e) {
-            throw new RuntimeException("Update subject by id failed", e);
+            throw new UpdateFailedSubject("Update failed subject: " + newSubjectName + " with subject's id: " + idOldSubject, e);
         }
         return null;
     }
@@ -149,7 +155,7 @@ public class SubjectImplDao implements SubjectDao {
             if(rowAffected > 0) return true;
         }
         catch (Exception e) {
-            throw new RuntimeException("Delete subject failed", e);
+            throw new DeleteFailedSubject("Delete subject failed with subject's id: " + id, e);
         }
         return false;
     }
@@ -171,7 +177,7 @@ public class SubjectImplDao implements SubjectDao {
                 }
         }
          catch (Exception e) {
-            throw new RuntimeException("Found all subjects failed due to a database error", e);
+             throw new NotFoundSubject("Error finding all subjects",e);
         }
 
         return subjects;
@@ -198,7 +204,7 @@ public class SubjectImplDao implements SubjectDao {
                 }
             }
         } catch (Exception e) {
-            throw new RuntimeException("Error finding subject by name and user ID due to a database error", e);
+            throw new NotFoundSubject("Error finding subject by Subject's name: " + name + " of User's id: " + userId,e);
         }
 
         return subject;

@@ -46,4 +46,9 @@ public class Subject {
         this.nameSubject = nameSubject;
     }
 
+
+    @Override
+    public String toString() {
+        return "{ nameSubject= " + nameSubject + ", id= " + id +", idUser= " + idUser + '}';
+    }
 }

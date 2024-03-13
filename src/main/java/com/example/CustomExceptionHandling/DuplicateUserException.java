@@ -1,4 +1,4 @@
-package com.example.ExceptionHandling;
+package com.example.CustomExceptionHandling;
 
 import java.sql.SQLException;
 

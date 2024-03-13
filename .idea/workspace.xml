@@ -5,465 +5,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d262f6e8-f44b-4789-8a38-b5ea88b6a8a8" name="Changes" comment="first">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/SubjectAPIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/AddQuestionsToExamFailed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/CreateFailedHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/CreatingAnswerFailed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/CreatingFailedExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/CreatingFailedQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/CreatingFailedResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/CreatingFailedSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/CreatingFailedUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/DeleteFaildExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/DeleteFailedAnswer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/DeleteFailedHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/DeleteFailedResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/DeleteFailedSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/DeleteQuestionFailed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/NotFoundAnswer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/NotFoundExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/NotFoundHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/NotFoundQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/NotFoundResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/NotFoundSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/NotFoundUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/UpdateAnswerFailed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/UpdateFailedQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/UpdateFailedSubject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Changes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Changes/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b034b5c64ba5a356b49fd5df986528dfe087313" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b034b5c64ba5a356b49fd5df986528dfe087313" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f7f6d66ddce4e4c01708ff56de6189ba13b253f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f7f6d66ddce4e4c01708ff56de6189ba13b253f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/60171c396ee5a7c776f9ab0f8b966f1b8c65b73f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/60171c396ee5a7c776f9ab0f8b966f1b8c65b73f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f4d534fa2f227ce040d5d24e80c485788557734" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f4d534fa2f227ce040d5d24e80c485788557734" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/70bd360cded737fe807fec4ba9b8d40481276599" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/70bd360cded737fe807fec4ba9b8d40481276599" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/712e9518baaa40184c4bb8b6ff64f90ca4805a6a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/712e9518baaa40184c4bb8b6ff64f90ca4805a6a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/a/ca20172b62ee29d77366d16a73a8e2e5b4dc23ea" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/a/ca20172b62ee29d77366d16a73a8e2e5b4dc23ea" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d36458baf5e6bb8cab76d3f4a3605fa5ee899bb4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d36458baf5e6bb8cab76d3f4a3605fa5ee899bb4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4cab3ddc5f4dda36e831c6c33249d88b2c3d328" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4cab3ddc5f4dda36e831c6c33249d88b2c3d328" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/dea0a35f02de79f2f394297ba545aa39dc4da710" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/dea0a35f02de79f2f394297ba545aa39dc4da710" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7f21991178963ee418a2627d5a6dc306772f220" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7f21991178963ee418a2627d5a6dc306772f220" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/faca705129b7d14b686455801af16d099f412cd7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/faca705129b7d14b686455801af16d099f412cd7" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/ExamQuestionDetailsDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/ExamQuestionDetailsDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/ExamQuestionIdsDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/ExamQuestionIdsDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/HistoryResultDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/HistoryResultDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/QuestionAnswerDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/QuestionAnswerDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/controller/AuthenticationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/controller/DoExamController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/controller/ExamCRUDController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/controller/HistoryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/controller/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/controller/QuestionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/controller/SubjectController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/AnswerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/AnswerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/ExamDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/ExamDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/HistoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/HistoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/QuestionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/ResultDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/ResultDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/SubjectDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/SubjectDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/entity/Exam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/entity/Exam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/entity/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/entity/Subject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/middleware/HandleNotFound404.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/middleware/HandleNotFound404.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/AnswerimplDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/AnswerimplDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/ExamImplDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/ExamImplDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/HistoryImplDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/HistoryImplDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/QuestionImplDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/QuestionImplDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/ResultImplDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/ResultImplDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/SubjectImplDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/SubjectImplDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/service/ExamService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/service/ExamService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/service/HistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/service/HistoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/service/QuestionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/service/SubjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/service/SubjectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/utility/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/utility/Helper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/Italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/agenda.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/alarm-clock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/alert.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/align-center.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/align-justify.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/align-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/align-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/anchor.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/android.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/angle-double-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/angle-double-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/angle-double-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/angle-double-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/angle-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/angle-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/angle-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/angle-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/announcement.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/apple.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/archive.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrow-circle-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrow-circle-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrow-circle-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrow-circle-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrow-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrow-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrow-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrow-top-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrow-top-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrow-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrows-corner.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrows-horizontal.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/arrows-vertical.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/back-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/back-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/bag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/bar-chart-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/bar-chart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/basketball.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/bell.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/blackboard.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/bolt-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/bolt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/book.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/bookmark-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/bookmark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/briefcase.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/brush-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/brush.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/calendar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/camera.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/car.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/check-box.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/check.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/clip.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/clipboard.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/close.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/cloud-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/cloud-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/cloud.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/comment-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/comment.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/comments-smiley.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/comments.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/control-backward.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/control-eject.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/control-forward.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/control-pause.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/control-play.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/control-record.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/control-shuffle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/control-skip-backward.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/control-skip-forward.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/control-stop.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/credit-card.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/crown.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/css3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/cup.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/cut.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/dashboard.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/desktop.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/direction-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/direction.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/download.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/dribbble.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/dropbox-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/dropbox.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/drupal.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/email.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/envelope.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/eraser.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/exchange-vertical.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/export.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/eye.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/face-sad.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/face-smile.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/files.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/filter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/flag-alt-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/flag-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/flag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/flickr-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/flickr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/folder.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/fullscreen.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/gallery.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/game.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/gift.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/github.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/google.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/hand-drag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/hand-open.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/hand-point-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/hand-point-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/hand-point-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/hand-point-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/hand-stop.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/harddrive.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/harddrives.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/headphone-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/headphone.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/heart-broken.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/heart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/help-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/help.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/home.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/html5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/hummer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/id-badge.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/image.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/import.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/infinite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/info-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/info.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/ink-pen.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/instagram.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/joomla.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/jsfiddle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/key.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layers-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layers.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-accordion-list.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-accordion-merged.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-accordion-separated.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-column2-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-column2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-column3-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-column3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-column4-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-column4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-cta-btn-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-cta-btn-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-cta-center.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-cta-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-cta-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-grid2-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-grid2-thumb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-grid2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-grid3-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-grid3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-grid4-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-grid4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-line-solid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-list-large-image.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-list-post.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-list-thumb-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-list-thumb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-media-center-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-media-center.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-media-left-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-media-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-media-overlay-alt-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-media-overlay-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-media-overlay.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-media-right-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-media-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-menu-full.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-menu-separated.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-menu-v.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-menu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-placeholder.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-sidebar-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-sidebar-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-sidebar-none.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-sidebar-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-slider-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-slider.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-tab-min.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-tab-v.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-tab-window.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-tab.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-width-default-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-width-default.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout-width-full.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/layout.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/light-bulb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/line-dashed.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/line-dotted.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/line-double.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/link.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/linkedin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/linux.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/list-ol.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/list.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/location-arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/location-pin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/lock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/loop.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/magnet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/map-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/map.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/marker-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/marker.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/medall-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/medall.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/menu-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/menu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/microphone-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/microphone.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/microsoft-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/microsoft.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/minus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/mobile.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/money.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/more-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/more.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/mouse-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/mouse.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/music-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/music.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/na.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/new-window.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/notepad.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/package.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/paint-bucket.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/paint-roller.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/palette.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/panel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/paragraph.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/pencil-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/pencil-alt2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/pencil.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/pie-chart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/pin-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/pin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/pin2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/pinterest-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/pinterest.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/plug.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/plus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/power-off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/printer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/pulse.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/quote-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/quote-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/receipt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/reddit.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/reload.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/rocket.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/rss-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/rss.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/ruler-alt-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/ruler-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/ruler-pencil.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/ruler.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/save-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/save.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/server.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/settings.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/share-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/share.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/sharethis-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/sharethis.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/shield.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/shift-left-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/shift-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/shift-right-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/shift-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/shine.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/shopping-cart-full.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/shopping-cart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/shortcode.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/signal.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/skype.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/slice.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/smallcap.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/soundcloud.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/split-h.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/split-v-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/split-v.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/spray.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/stack-overflow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/stamp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/star.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/stats-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/stats-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/support.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/tablet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/tag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/target.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/text.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/themify-favicon-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/themify-favicon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/themify-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/thought.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/thumb-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/thumb-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/ticket.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/time.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/timer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/trash.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/trello.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/truck.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/tumblr-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/tumblr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/twitter-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/twitter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/underline.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/unlink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/unlock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/upload.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/uppercase.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/user.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/vector.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/video-camera.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/video-clapper.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/view-grid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/view-list-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/view-list.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/vimeo-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/vimeo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/volume.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/wallet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/wand.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/wheelchair.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/widget-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/widget.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/widgetized.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/window.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/wordpress.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/world.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/write.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/yahoo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/youtube.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/zip.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/zoom-in.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/SVG/zoom-out.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/Themify IconFonts 5-23-2014.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/demo-files/demo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/fonts/themify.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/fonts/themify.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/fonts/themify.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/fonts/themify.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/ie7/ie7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/ie7/ie7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/icon/themify-icons/themify-icons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/static/img/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis,_September_2023_(cropped).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/views/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuesApp/views/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-02-17" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-02-18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-02-19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-02-20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-02-21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-02-23" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-02-24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-02-25" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-02-26" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-02-27" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-02-28" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-02-29" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-03-01" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-03-02" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-03-03" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-03-04" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-03-05" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-03-06" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/SESSIONS.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/addQuestionToExam_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/addQuestionToExam_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/createExamForm_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/createExamForm_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/createQuestionForm_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/createQuestionForm_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/createSubjectForm_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/createSubjectForm_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/doExam_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/doExam_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/histories_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/histories_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/home_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/home_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/listExam_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/listExam_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/listQuestion_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/listQuestion_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/login_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/login_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/register_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/register_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/subjects_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/subjects_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/updateExamForm_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/updateExamForm_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/updateQuestionForm_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/updateQuestionForm_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/updateSubjectForm_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/QuesApp/org/apache/jsp/views/updateSubjectForm_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/AuthenticationAPIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/AuthenticationAPIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/ExamCRUDAPIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/ExamCRUDAPIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/QuestionAPIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/QuestionAPIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/SubjectAPIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/SubjectAPIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ExceptionHandling/DuplicateSubjectException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/DuplicateSubjectException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ExceptionHandling/DuplicateUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/DuplicateUserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/entity/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/entity/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/Exam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/entity/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/entity/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/entity/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/AnswerimplDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/AnswerimplDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/ExamImplDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/ExamImplDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/HistoryImplDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/HistoryImplDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/QuestionImplDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/QuestionImplDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/ResultImplDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/ResultImplDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/SubjectImplDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/SubjectImplDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/UserImplDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/UserImplDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/SubjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/SubjectService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -505,28 +109,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "master",
-    "ignore_missing_gitignore": "true",
-    "last_opened_file_path": "D:/My Project/QuesApp",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;//wsl$/Ubuntu-20.04/home/phuc2003/myProject/Ecommerce_Spring_Boot&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\My Project\QuesApp\src\main\webapp" />
@@ -589,5 +193,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <option name="LAST_COMMIT_MESSAGE" value="first" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,6 +1,6 @@
 package com.example.APIcontroller;
 
-import com.example.ExceptionHandling.DuplicateUserException;
+import com.example.CustomExceptionHandling.DuplicateUserException;
 import com.example.utility.ResponseUtility;
 import com.example.utility.Validate;
 import com.example.entity.User;

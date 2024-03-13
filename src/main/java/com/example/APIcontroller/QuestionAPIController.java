@@ -2,7 +2,7 @@ package com.example.APIcontroller;
 
 
 import com.example.DTO.QuestionAnswerDTO;
-import com.example.ExceptionHandling.DuplicateSubjectException;
+import com.example.CustomExceptionHandling.DuplicateSubjectException;
 import com.example.mySQLImplDao.AnswerimplDao;
 import com.example.mySQLImplDao.QuestionImplDao;
 import com.example.service.QuestionService;
@@ -15,7 +15,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

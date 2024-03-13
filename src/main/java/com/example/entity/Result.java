@@ -11,6 +11,12 @@ public class Result {
     public Result() {
     }
 
+
+    @Override
+    public String toString() {
+        return "{ idResult: " + idResult + " idExam: " + idExam + " score: " + score + '}';
+    }
+
     @JsonCreator
     public Result(@JsonProperty("id_result") int idResult, @JsonProperty("id_exam") int idExam,@JsonProperty("score") double score) {
         this.idResult = idResult;

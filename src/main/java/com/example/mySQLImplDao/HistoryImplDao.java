@@ -1,10 +1,8 @@
 package com.example.mySQLImplDao;
 
+import com.example.CustomExceptionHandling.*;
 import com.example.DataSource.ConnectionPool;
-import com.example.ExceptionHandling.DuplicateUserException;
 import com.example.dao.HistoryDao;
-import com.example.entity.Answer;
-import com.example.entity.Exam;
 import com.example.entity.History;
 
 import java.sql.*;
@@ -37,8 +35,8 @@ public class HistoryImplDao implements HistoryDao {
                     history.setIdResult(idResult);
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException("Error finding history by id due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundHistory("Error finding history by id with result's id: " + idResult, e);
         }
 
         return history;
@@ -53,8 +51,8 @@ public class HistoryImplDao implements HistoryDao {
             int rowAffected = preparedStatement.executeUpdate();
             if(rowAffected > 0) return true;
         }
-        catch (Exception e) {
-            throw new RuntimeException("Delete results failed", e);
+        catch (SQLException e) {
+            throw new DeleteFailedHistory("Delete history failed with result's id: " + idResult, e);
         }
         return false;
     }
@@ -81,9 +79,9 @@ public class HistoryImplDao implements HistoryDao {
                     histories.add(history);
                 }
             }
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Error finding histories of user due to a database error", e);
+            throw new NotFoundHistory("Error finding histories of user with user's id: " + idUser, e);
         }
 
         return histories;
@@ -110,9 +108,9 @@ public class HistoryImplDao implements HistoryDao {
                     throw new SQLException("Creating history, no ID obtained.");
                 }
             }
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Create history failed due to a database error", e);
+            throw new CreateFailedHistory("Create history failed with history: " + history, e);
         }
         return history;
     }
@@ -153,8 +151,8 @@ public class HistoryImplDao implements HistoryDao {
                     history.setIdResult(resultSet.getInt("id_result"));
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException("Error finding all histories due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundHistory("Error finding all histories", e);
         }
 
         return histories;
@@ -186,8 +184,8 @@ public class HistoryImplDao implements HistoryDao {
                     history.setIdResult(resultSet.getInt("id_result"));
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException("Error finding history by id due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundHistory("Error finding history by id with history's id: " + id, e);
         }
 
         return history;

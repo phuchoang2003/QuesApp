@@ -1,7 +1,7 @@
 package com.example.service;
 
 
-import com.example.ExceptionHandling.DuplicateSubjectException;
+import com.example.CustomExceptionHandling.DuplicateSubjectException;
 import com.example.dao.ExamDao;
 import com.example.dao.SubjectDao;
 import com.example.entity.Subject;

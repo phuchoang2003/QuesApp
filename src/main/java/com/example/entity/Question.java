@@ -11,6 +11,11 @@ public class Question {
         public Question() {
         }
 
+        @Override
+        public String toString() {
+                return "{idQuestion: " + idQuestion + " content: " + content + " idSubject: " + idQuestion +'}';
+        }
+
         @JsonCreator
         public Question( @JsonProperty("id_question") int idQuestion,@JsonProperty("content") String content,@JsonProperty("id_subject") int idSubject) {
                 this.idQuestion = idQuestion;

@@ -1,7 +1,7 @@
 package com.example.APIcontroller;
 
 
-import com.example.ExceptionHandling.DuplicateSubjectException;
+import com.example.CustomExceptionHandling.DuplicateSubjectException;
 import com.example.mySQLImplDao.ExamImplDao;
 import com.example.utility.Helper;
 import com.example.utility.ResponseUtility;

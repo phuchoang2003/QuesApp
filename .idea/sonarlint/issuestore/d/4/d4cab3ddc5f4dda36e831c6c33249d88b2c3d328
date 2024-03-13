@@ -8,5 +8,27 @@ u	java:S120"ZRename this package name to match the regular expression '^[a-z_
 java:S1989#"{Handle the following exceptions that could be thrown by "readValue": IOException, JsonParseException, JsonMappingException.(Îş®İøÿÿÿÿ8³Æ×Àâ1
 r
 java:S1989#"PHandle the following exception that could be thrown by "getReader": IOException.(Îş®İøÿÿÿÿ8´Æ×Àâ1
+y
+java:S1989("WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(©–…øşÿÿÿÿ8¢Í„Áâ1
+y
+java:S1989*"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(‰¨ç”ûÿÿÿÿ8¥Í„Áâ1
+y
+java:S1989,"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(‰õ£Àûÿÿÿÿ8¦Í„Áâ1
+y
+java:S1989."WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(µÚ‚üÿÿÿÿ8§Í„Áâ1
 V
 java:S2130H"9Use "Integer.parseInt" for this string-to-int conversion.(Ù‹”ÿ8äÆ×Àâ1
+y
+java:S1989L"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(¢Â¤ôùÿÿÿÿ8ÌÍ„Áâ1
+t
+java:S1989N"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(“êÊ™8ÍÍ„Áâ1
+y
+java:S1989P"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(‰õ£Àûÿÿÿÿ8ÎÍ„Áâ1
+y
+java:S1989S"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(ô€¡şÿÿÿÿ8ĞÍ„Áâ1
+t
+java:S1989l"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(èÆ¶ÿ8ØÍ„Áâ1
+u
+java:S1989"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(˜Âÿ8ßÍ„Áâ1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8êÍ„Áâ1

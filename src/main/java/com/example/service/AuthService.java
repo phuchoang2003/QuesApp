@@ -1,6 +1,6 @@
 package com.example.service;
 
-import com.example.ExceptionHandling.DuplicateUserException;
+import com.example.CustomExceptionHandling.DuplicateUserException;
 import com.example.dao.UserDao;
 import com.example.entity.User;
 import com.example.utility.Encryption;

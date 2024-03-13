@@ -1,6 +1,6 @@
 package com.example.dao;
 
-import com.example.ExceptionHandling.DuplicateUserException;
+import com.example.CustomExceptionHandling.DuplicateUserException;
 
 import java.util.List;
 

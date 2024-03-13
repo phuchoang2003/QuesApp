@@ -1,0 +1,24 @@
+
+h
+java:S1192B"KDefine a constant instead of duplicating this literal "isTakeExam" 3 times.(ö¾Úğ8½Ÿ—Áâ1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÁŒ]8ÀŸ—Áâ1
+y
+java:S1989K"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(ü±ÀÚşÿÿÿÿ8ô —Áâ1
+y
+java:S1989V"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(ó¿´ïûÿÿÿÿ8û —Áâ1
+V
+java:S2130^"9Use "Integer.parseInt" for this string-to-int conversion.(ÖÀêÌ8ş —Áâ1
+˜
+java:S1989a"{Handle the following exceptions that could be thrown by "readValue": IOException, JsonParseException, JsonMappingException.(‘ÅÓÚ8¡—Áâ1
+m
+java:S1989a"PHandle the following exception that could be thrown by "getReader": IOException.(‘ÅÓÚ8‚¡—Áâ1
+t
+java:S1989o"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(¡¸•À8‰¡—Áâ1
+t
+java:S1989q"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(ùÖ¤Ì8Œ¡—Áâ1
+t
+java:S1989t"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(¾È÷µ8¡—Áâ1
+t
+java:S1989w"WHandle the following exception that could be thrown by "sendJsonResponse": IOException.(„Î×œ8¡—Áâ1
+R
+java:S1128"5Remove this unused import 'java.util.logging.Logger'.(ƒ¥óš8‘¡—Áâ1

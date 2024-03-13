@@ -2,9 +2,7 @@ package com.example.APIcontroller;
 
 import com.example.DTO.ExamDTO;
 import com.example.DTO.ExamQuestionIdsDTO;
-import com.example.DTO.QuestionAnswerDTO;
-import com.example.DTO.SubmitExamDTO;
-import com.example.ExceptionHandling.DuplicateSubjectException;
+import com.example.CustomExceptionHandling.DuplicateSubjectException;
 import com.example.mySQLImplDao.*;
 import com.example.service.ExamService;
 import com.example.utility.Helper;
@@ -16,9 +14,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @WebServlet(urlPatterns = "/auth/exams")

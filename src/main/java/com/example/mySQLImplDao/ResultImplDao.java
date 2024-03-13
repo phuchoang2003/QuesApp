@@ -1,7 +1,10 @@
 package com.example.mySQLImplDao;
 
+import com.example.CustomExceptionHandling.CreatingFailedResult;
+import com.example.CustomExceptionHandling.DeleteFailedResult;
+import com.example.CustomExceptionHandling.NotFoundResult;
 import com.example.DataSource.ConnectionPool;
-import com.example.ExceptionHandling.DuplicateUserException;
+import com.example.CustomExceptionHandling.DuplicateUserException;
 import com.example.dao.ResultDao;
 import com.example.entity.History;
 import com.example.entity.Result;
@@ -30,9 +33,8 @@ public class ResultImplDao implements ResultDao {
                 }
             }
 
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new RuntimeException("Error finding results corresponding to histories due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundResult("Error finding results with Exam's id: " + idExam, e);
         }
 
         return results;
@@ -47,8 +49,8 @@ public class ResultImplDao implements ResultDao {
             int rowAffected = preparedStatement.executeUpdate();
             if(rowAffected > 0) return true;
         }
-        catch (Exception e) {
-            throw new RuntimeException("Delete results failed", e);
+        catch (SQLException e) {
+            throw new DeleteFailedResult("Delete results failed with Exam's id: " + idExam, e);
         }
         return false;
     }
@@ -76,9 +78,8 @@ public class ResultImplDao implements ResultDao {
                 }
             }
 
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new RuntimeException("Error finding results corresponding to histories due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundResult("Error finding results corresponding to histories with history's ids: " + histories, e);
         }
 
         return results;
@@ -104,9 +105,9 @@ public class ResultImplDao implements ResultDao {
                     throw new SQLException("Creating result, no ID obtained.");
                 }
             }
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Create result failed due to a database error", e);
+            throw new CreatingFailedResult("Create result failed with result: " + result.toString(), e);
         }
         return result;
     }
@@ -136,9 +137,9 @@ public class ResultImplDao implements ResultDao {
                 results.add(result);
                 }
         }
-        catch (Exception e) {
+        catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Error finding all results due to a database error", e);
+            throw new NotFoundResult("Error finding all results", e);
         }
 
         return results;
@@ -160,9 +161,9 @@ public class ResultImplDao implements ResultDao {
 
             }
         }
-        catch (Exception e) {
+        catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Error finding result by id due to a database error", e);
+            throw new NotFoundResult("Error finding result by id with Result's id: " + id, e);
         }
 
         return result;

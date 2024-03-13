@@ -1,11 +1,12 @@
 package com.example.mySQLImplDao;
 
+import com.example.CustomExceptionHandling.*;
 import com.example.DataSource.ConnectionPool;
 import com.example.dao.QuestionDao;
 import com.example.entity.Question;
-import com.example.entity.Result;
 import com.example.utility.Helper;
 
+import java.security.cert.CertificateRevokedException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,9 +34,9 @@ public class QuestionImplDao implements QuestionDao {
                 }
             }
 
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Error finding list questions due to a database error", e);
+            throw new NotFoundQuestion("Error finding list questions with ids: " + listIds, e);
         }
 
         return questions;
@@ -58,8 +59,8 @@ public class QuestionImplDao implements QuestionDao {
                     questions.add(question);
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException("Error finding questions of exam due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundQuestion("Error finding questions of exam with Exam's id: " + idExam, e);
         }
         return questions;
     }
@@ -76,8 +77,8 @@ public class QuestionImplDao implements QuestionDao {
             statement.setInt(2, idExam);
             statement.executeUpdate();
 
-        } catch (Exception e) {
-            throw new RuntimeException(e.getMessage());
+        } catch (SQLException e) {
+            throw new DeleteQuestionFailed("Remove question with question's id: " + idQuestion + " from exam with exam's id: " + idExam +" failed", e);
         }
     }
 
@@ -93,8 +94,8 @@ public class QuestionImplDao implements QuestionDao {
                 statement.addBatch();
             }
             statement.executeBatch();
-        } catch (Exception e) {
-            throw new RuntimeException(e.getMessage());
+        } catch (SQLException e) {
+            throw new AddQuestionsToExamFailed("Add questions with question's ids: " + idQuestions + " to exam with exam's id: " + idExam,e);
         }
     }
 
@@ -115,9 +116,9 @@ public class QuestionImplDao implements QuestionDao {
                     questions.add(question);
                 }
             }
-        } catch (Exception e) {
+        } catch (SQLException e) {
 
-            throw new RuntimeException("Error finding question by subject due to a database error", e);
+            throw new NotFoundQuestion("Error finding question by subject with Subject's id: " + idSubject, e);
         }
 
         return questions;
@@ -146,7 +147,7 @@ public class QuestionImplDao implements QuestionDao {
                 }
             }
         } catch (SQLException e) {
-            throw new RuntimeException("Create question failed due to a database error", e);
+            throw new CreatingFailedQuestion("Create question failed with question: " + question.toString(), e);
         }
         return question;
     }
@@ -168,8 +169,8 @@ public class QuestionImplDao implements QuestionDao {
                     question.setIdSubject(resultSet.getInt("id_subject"));
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException("Error finding question by id due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundQuestion("Error finding question by id with question's id: " + id, e);
         }
 
         return question;
@@ -196,7 +197,7 @@ public class QuestionImplDao implements QuestionDao {
             }
 
         } catch (Exception e) {
-            throw new RuntimeException(e.getMessage());
+            throw new UpdateFailedQuestion("Update failed question: " + newQuestion + " with question's id: " + idOldQuestion,e);
         }
         return null;
     }
@@ -210,8 +211,8 @@ public class QuestionImplDao implements QuestionDao {
             int rowAffected = preparedStatement.executeUpdate();
             if(rowAffected > 0) return true;
         }
-        catch (Exception e) {
-            throw new RuntimeException("Delete question failed", e);
+        catch (SQLException e) {
+            throw new DeleteQuestionFailed("Delete question failed with question's id: " + idQuestion, e);
         }
         return false;
     }
@@ -232,8 +233,8 @@ public class QuestionImplDao implements QuestionDao {
                 questions.add(question);
             }
         }
-        catch (Exception e) {
-            throw new RuntimeException("Found all questions failed due to a database error", e);
+        catch (SQLException e) {
+            throw new NotFoundQuestion("Found all questions failed", e);
         }
 
         return questions;

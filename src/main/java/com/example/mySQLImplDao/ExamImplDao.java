@@ -1,13 +1,13 @@
 package com.example.mySQLImplDao;
 
+import com.example.CustomExceptionHandling.CreatingFailedExam;
+import com.example.CustomExceptionHandling.DeleteFaildExam;
+import com.example.CustomExceptionHandling.NotFoundExam;
 import com.example.DataSource.ConnectionPool;
-import com.example.ExceptionHandling.DuplicateUserException;
+import com.example.CustomExceptionHandling.DuplicateUserException;
 import com.example.dao.ExamDao;
-import com.example.dao.SubjectDao;
 import com.example.entity.Exam;
-import com.example.entity.Question;
 import com.example.entity.Result;
-import com.example.entity.Subject;
 import com.example.utility.Helper;
 
 import java.sql.*;
@@ -27,9 +27,9 @@ public class ExamImplDao implements ExamDao {
             int rowAffected = preparedStatement.executeUpdate();
             if(rowAffected > 0) return true;
         }
-        catch (Exception e) {
+        catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Delete Exam failed", e);
+            throw new DeleteFaildExam("Delete all exams of subject fail with subject's id: " + idSubject, e);
         }
         return false;    }
 
@@ -56,9 +56,9 @@ public class ExamImplDao implements ExamDao {
                 }
             }
 
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Error finding exams corresponding to results due to a database error", e);
+            throw new NotFoundExam("Error finding exams submitted by list result's ids: " + listResults, e);
         }
 
         return exams;
@@ -81,8 +81,8 @@ public class ExamImplDao implements ExamDao {
                     exams.add(exam);
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException("Error finding exams by id user due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundExam("Error finding all exams of user with user's id: " + idUser, e);
         }
 
         return exams;
@@ -105,8 +105,8 @@ public class ExamImplDao implements ExamDao {
                     exams.add(exam);
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException("Error finding exams by id subject due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundExam("Error finding exams of subject with subject's id: " + idSubject, e);
         }
 
         return exams;
@@ -133,9 +133,9 @@ public class ExamImplDao implements ExamDao {
                     throw new SQLException("Creating exam, no ID obtained.");
                 }
             }
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Create exam failed due to a database error", e);
+            throw new CreatingFailedExam("Create exam failed with exam: " + exam.toString(), e);
         }
         return exam;
     }
@@ -154,9 +154,9 @@ public class ExamImplDao implements ExamDao {
             int rowAffected = preparedStatement.executeUpdate();
             if(rowAffected > 0) return true;
         }
-        catch (Exception e) {
+        catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Delete Exam failed", e);
+            throw new DeleteFaildExam("Delete Exam failed with exam's id: " + idExam, e);
         }
         return false;
     }
@@ -176,8 +176,8 @@ public class ExamImplDao implements ExamDao {
                     exam.setIdExam(resultSet.getInt("id_exam"));
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException("Error finding all exams due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundExam("Error finding all exams", e);
         }
 
         return exams;
@@ -199,8 +199,8 @@ public class ExamImplDao implements ExamDao {
                     exam.setIdExam(id);
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException("Error finding exam by id due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundExam("Error finding exam by id with exam's id: " + id, e);
         }
 
         return exam;

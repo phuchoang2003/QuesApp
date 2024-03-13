@@ -9,6 +9,11 @@ public class Answer {
     private boolean isCorrect;
     private int idQuestion;
 
+    @Override
+    public String toString() {
+        return "{idAnswer: " + idAnswer + " contentOption: " + contentOption + " isCorrect: " + isCorrect + "idQuestion: " + idQuestion + "}";
+    }
+
     public Answer() {
     }
 

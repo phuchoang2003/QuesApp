@@ -17,6 +17,11 @@ public class User {
         return id_user;
     }
 
+    @Override
+    public String toString() {
+        return "{idUser: " + id_user + " userName: " + userName + " email: " + email + " password: "+password +'}';
+    }
+
     public void setId_user(int id_user) {
         this.id_user = id_user;
     }

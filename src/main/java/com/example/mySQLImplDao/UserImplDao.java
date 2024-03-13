@@ -1,7 +1,9 @@
 package com.example.mySQLImplDao;
 
+import com.example.CustomExceptionHandling.CreatingFailedUser;
+import com.example.CustomExceptionHandling.NotFoundUser;
 import com.example.DataSource.ConnectionPool;
-import com.example.ExceptionHandling.DuplicateUserException;
+import com.example.CustomExceptionHandling.DuplicateUserException;
 import com.example.dao.UserDao;
 import com.example.entity.User;
 
@@ -32,7 +34,7 @@ public class UserImplDao implements UserDao {
                 }
             }
          catch (SQLException e) {
-            throw new RuntimeException("Error fetching users", e);
+            throw new NotFoundUser("User not found with User's id: " + id,e);
         }
 
         return user;
@@ -50,7 +52,7 @@ public class UserImplDao implements UserDao {
         } catch (SQLIntegrityConstraintViolationException e) {
             throw new DuplicateUserException("Duplicate key error. This user already exists.", e);
         } catch (SQLException e) {
-            throw new RuntimeException("Registration failed due to a database error", e);
+            throw new CreatingFailedUser("Creating failed User with User: " + user.toString(), e);
         }
         return user;
     }
@@ -105,7 +107,7 @@ public class UserImplDao implements UserDao {
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new NotFoundUser("User not found with User's email: " + email,e);
         }
         return null;
     }

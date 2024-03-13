@@ -1,5 +1,6 @@
 package com.example.mySQLImplDao;
 
+import com.example.CustomExceptionHandling.*;
 import com.example.DataSource.ConnectionPool;
 import com.example.dao.AnswerDao;
 import com.example.entity.Answer;
@@ -28,9 +29,9 @@ public class AnswerimplDao implements AnswerDao {
                     throw new SQLException("Creating answer failed, no ID obtained.");
                 }
             }
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Create answer failed due to a database error", e);
+            throw new CreatingAnswerFailed("Create answer failed with answer: " + answer.toString(), e);
         }
         return answer;
     }
@@ -53,8 +54,8 @@ public class AnswerimplDao implements AnswerDao {
                     result.add(answer);
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException("Error finding answer by question due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundAnswer("Error finding answers by question with question's id: " + idQuestion, e);
         }
 
         return result;
@@ -80,10 +81,12 @@ public class AnswerimplDao implements AnswerDao {
                  int rowsAffected = preparedStatement.executeUpdate();
                  if (rowsAffected > 0) return new Answer(idOldAnswer,newContent,newIsCorrect,idQuestion);
              }
-             else throw new RuntimeException();
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new RuntimeException();
+             else throw new NotFoundAnswer("Error finding answer by question with answer's id: " + idOldAnswer);
+        } catch (NotFoundExam e) {
+            throw new NotFoundAnswer(e.getMessage(),e);
+        }
+        catch (SQLException e){
+            throw new UpdateAnswerFailed("Update answer failed with answer: " + newAnswer + " with answer's id: " + idOldAnswer,e);
         }
         return null;
 
@@ -98,8 +101,8 @@ public class AnswerimplDao implements AnswerDao {
             int rowAffected = preparedStatement.executeUpdate();
             if(rowAffected > 0) return true;
         }
-        catch (Exception e) {
-            throw new RuntimeException("Delete answer failed", e);
+        catch (SQLException e) {
+            throw new DeleteFailedAnswer("Delete answer failed with answer's id: " + idAnswer, e);
         }
         return false;
     }
@@ -114,8 +117,8 @@ public class AnswerimplDao implements AnswerDao {
             int rowAffected = preparedStatement.executeUpdate();
             if(rowAffected > 0) return true;
         }
-        catch (Exception e) {
-            throw new RuntimeException("Delete answers failed", e);
+        catch (SQLException e) {
+            throw new DeleteFailedAnswer("Delete all answers by question with question's id: " + idQuestion + " failed", e);
         }
         return false;
     }
@@ -135,8 +138,8 @@ public class AnswerimplDao implements AnswerDao {
                     answer.setIdQuestion(resultSet.getInt("id_question"));
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException("Error finding all answers due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundAnswer("Error finding all answers", e);
         }
 
         return answers;
@@ -159,8 +162,8 @@ public class AnswerimplDao implements AnswerDao {
                     answer.setIdQuestion(resultSet.getInt("id_question"));
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException("Error finding answer by id due to a database error", e);
+        } catch (SQLException e) {
+            throw new NotFoundAnswer("Error finding answer by id with answer's id: " + idAnswer, e);
         }
 
         return answer;
