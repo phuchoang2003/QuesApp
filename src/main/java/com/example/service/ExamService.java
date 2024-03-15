@@ -171,7 +171,9 @@ public class ExamService {
                 ++numCorrectQuestion;
             }
         }
-        return (numQuestion > 0) ? ((double) numCorrectQuestion / numQuestion) * 10 : 0;
+        double scoreBeforeRound = (numQuestion > 0) ? ((double) numCorrectQuestion / numQuestion) * 10 : 0;
+        double score = Math.round(scoreBeforeRound * 100.0) / 100.0;
+        return score;
     }
 
 

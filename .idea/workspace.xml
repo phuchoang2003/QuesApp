@@ -5,137 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d262f6e8-f44b-4789-8a38-b5ea88b6a8a8" name="Changes" comment="first">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/DeleteFailedExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/ValidateAnswer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/ValidationQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f6e1cc48dce831870a91d04c2a145ee09dd0a73" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f6e1cc48dce831870a91d04c2a145ee09dd0a73" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bc50f6c6296292143fb6e596f5b5126f8ff8f9c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bc50f6c6296292143fb6e596f5b5126f8ff8f9c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b034b5c64ba5a356b49fd5df986528dfe087313" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b034b5c64ba5a356b49fd5df986528dfe087313" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/40288dd8c187897c7ecf89540a669448aa537622" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/47dbe4b3c489f37221eefd7a83affb90ab0da5c7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f7f6d66ddce4e4c01708ff56de6189ba13b253f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f7f6d66ddce4e4c01708ff56de6189ba13b253f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4fee8be58031e271e4cf8bddbdc0dd2740c6541c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4fee8be58031e271e4cf8bddbdc0dd2740c6541c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69f1a47531f59940f16eee0f6b63e06ead9eeaa5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75d8aa1408b72969b27bb0bdc8c0cec6c48425a9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75d8aa1408b72969b27bb0bdc8c0cec6c48425a9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/77a47707e799e978e7ef4b68982d6621889a4a8b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d36458baf5e6bb8cab76d3f4a3605fa5ee899bb4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4cab3ddc5f4dda36e831c6c33249d88b2c3d328" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4cab3ddc5f4dda36e831c6c33249d88b2c3d328" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da363dff275b22e3d3ff51f6798b556b06fc3106" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da363dff275b22e3d3ff51f6798b556b06fc3106" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/faca705129b7d14b686455801af16d099f412cd7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/0/40288dd8c187897c7ecf89540a669448aa537622" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/7/47dbe4b3c489f37221eefd7a83affb90ab0da5c7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/9/69f1a47531f59940f16eee0f6b63e06ead9eeaa5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/7/77a47707e799e978e7ef4b68982d6621889a4a8b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/3/d36458baf5e6bb8cab76d3f4a3605fa5ee899bb4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/a/faca705129b7d14b686455801af16d099f412cd7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/AuthenticationAPIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/APIController/AuthenticationAPIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/DoExamAPIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/APIController/DoExamAPIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/ExamCRUDAPIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/APIController/ExamCRUDAPIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/HistoryAPIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/APIController/HistoryAPIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/QuestionAPIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/APIController/QuestionAPIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/APIcontroller/SubjectAPIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/APIController/SubjectAPIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/DeleteFaildExam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/DuplicateUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/CustomExceptionHandling/DuplicateUserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/middleware/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/middleware/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/ExamImplDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/ExamImplDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/HistoryImplDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/HistoryImplDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/QuestionImplDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/QuestionImplDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/ResultImplDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/ResultImplDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/UserImplDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mySQLImplDao/UserImplDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/ExamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/ExamService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/HistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/HistoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/createQuestionForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/createQuestionForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/listQuestion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/listQuestion.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/AnswerUserDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/ExamQuestionDetailsDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/ExamQuestionIdsDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/HistoryResultDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/QuestionAnswerDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DTO/SubmitExamDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/DataSource/ConnectionPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/ExceptionHandling/DuplicateSubjectException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/ExceptionHandling/DuplicateUserException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/AnswerDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/Dao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/ExamDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/HistoryDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/QuestionDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/ResultDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/SubjectDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/entity/Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/entity/Exam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/entity/History.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/entity/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/entity/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/entity/Subject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/middleware/AccessCors.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/middleware/AuthenticationFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/middleware/HandleNotFound404.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/middleware/RateLimiter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/AnswerimplDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/ExamImplDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/HistoryImplDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/QuestionImplDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/ResultImplDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/SubjectImplDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/mySQLImplDao/UserImplDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/service/AuthService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/service/ExamService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/service/HistoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/service/QuestionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/service/SubjectService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/utility/Encryption.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/utility/Helper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/utility/ResponseUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/utility/RestAPIResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/utility/TokenBucketAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/com/example/utility/Validate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/classes/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/lib/c3p0-0.9.5.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/lib/jackson-annotations-2.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/lib/jackson-core-2.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/lib/jackson-databind-2.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/lib/jbcrypt-0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/lib/logback-classic-1.2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/lib/logback-core-1.2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/lib/mchange-commons-java-0.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/lib/mysql-connector-java-8.0.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/lib/slf4j-api-1.7.32.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/views/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/views/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuesApp/views/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/APIcontroller/AuthenticationAPIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/APIcontroller/AuthenticationAPIController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/APIcontroller/DoExamAPIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/APIcontroller/DoExamAPIController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/APIcontroller/ExamCRUDAPIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/APIcontroller/ExamCRUDAPIController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/APIcontroller/HistoryAPIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/APIcontroller/HistoryAPIController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/APIcontroller/QuestionAPIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/APIcontroller/QuestionAPIController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/APIcontroller/SubjectAPIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/APIcontroller/SubjectAPIController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ExceptionHandling/DuplicateSubjectException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ExceptionHandling/DuplicateUserException.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/Dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/dao/Dao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/entity/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/entity/Answer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/entity/Exam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/entity/Exam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/entity/History.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/entity/History.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/entity/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/entity/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/entity/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/entity/Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/entity/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/entity/Subject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/middleware/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/middleware/AuthenticationFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/mySQLImplDao/AnswerimplDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mySQLImplDao/AnswerimplDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/mySQLImplDao/ExamImplDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mySQLImplDao/ExamImplDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/mySQLImplDao/HistoryImplDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mySQLImplDao/HistoryImplDao.class" afterDir="false" />
@@ -145,10 +17,10 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/mySQLImplDao/UserImplDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mySQLImplDao/UserImplDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/service/AuthService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/ExamService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/service/ExamService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/HistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/service/HistoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/service/QuestionService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/SubjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/service/SubjectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
