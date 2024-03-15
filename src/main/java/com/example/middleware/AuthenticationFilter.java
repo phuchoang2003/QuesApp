@@ -23,12 +23,12 @@ public class AuthenticationFilter implements Filter {
         HttpServletResponse httpResponse = (HttpServletResponse) response;
         httpResponse.setContentType("application/json");
         httpResponse.setCharacterEncoding("UTF-8");
-
+        httpRequest.setCharacterEncoding("UTF-8");
 
         HttpSession session = httpRequest.getSession(false);
 
         if (session != null && session.getAttribute("id_user") != null) {
-            chain.doFilter(request, response);
+            chain.doFilter(httpRequest, httpResponse);
         } else {
             ResponseUtility.sendJsonResponse(httpResponse, "Unauthorized. Please login.", null,HttpServletResponse.SC_UNAUTHORIZED,false);
         }

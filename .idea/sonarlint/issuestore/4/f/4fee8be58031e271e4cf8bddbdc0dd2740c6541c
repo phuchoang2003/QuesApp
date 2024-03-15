@@ -1,0 +1,8 @@
+
+l
+java:S1192"JDefine a constant instead of duplicating this literal "id_result" 4 times.(¦ÏÏ©ÿÿÿÿÿ8Œ·Î«ã1
+c
+java:S1192"FDefine a constant instead of duplicating this literal "score" 4 times.(üÙı˜8ËæÛ«ã1
+d
+java:S1192J"HDefine a constant instead of duplicating this literal "id_exam" 3 times.(´ïÿ;8ËæÛ«ã1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºÌÚ˜ÿÿÿÿÿ8·Î«ã1

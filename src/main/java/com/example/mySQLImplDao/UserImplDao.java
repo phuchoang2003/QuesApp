@@ -41,7 +41,7 @@ public class UserImplDao implements UserDao {
     }
 
     @Override
-    public User create(User user) throws DuplicateUserException {
+    public User create(User user) {
         String query = "INSERT INTO users (email, password, user_name) VALUES (?, ?, ?)";
         try (Connection connection = ConnectionPool.getDataSource().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(query)) {

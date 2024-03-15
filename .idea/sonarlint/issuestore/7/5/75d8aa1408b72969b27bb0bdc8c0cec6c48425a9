@@ -1,0 +1,12 @@
+
+l
+java:S1192E"JDefine a constant instead of duplicating this literal "id_result" 3 times.(¦ÏÏ©ÿÿÿÿÿ8½¹´°ã1
+k
+java:S1192"IDefine a constant instead of duplicating this literal "end_time" 4 times.(şŸ…¤ûÿÿÿÿ8½¹´°ã1
+e
+java:S1192!"HDefine a constant instead of duplicating this literal "id_user" 3 times.(ØãÔà8½¹´°ã1
+m
+java:S1192"KDefine a constant instead of duplicating this literal "start_time" 4 times.(øÔËÂøÿÿÿÿ8½¹´°ã1
+h
+java:S1192""KDefine a constant instead of duplicating this literal "id_history" 4 times.(†™Çø8½¹´°ã1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºÌÚ˜ÿÿÿÿÿ8¿¹´°ã1

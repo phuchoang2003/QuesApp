@@ -1,5 +1,9 @@
 package com.example.service;
 
+import com.example.CustomExceptionHandling.CreatingFailedQuestion;
+import com.example.CustomExceptionHandling.DuplicateUserException;
+import com.example.CustomExceptionHandling.ValidateAnswer;
+import com.example.CustomExceptionHandling.ValidationQuestion;
 import com.example.DTO.QuestionAnswerDTO;
 import com.example.dao.AnswerDao;
 import com.example.dao.QuestionDao;
@@ -18,7 +22,7 @@ public class QuestionService {
         this.answerDao = answerDao;
     }
 
-    public QuestionAnswerDTO createQuestionOfSubject(int idSubject,QuestionAnswerDTO questionAnswerDTO) {
+    public QuestionAnswerDTO createQuestionOfSubject(int idSubject,QuestionAnswerDTO questionAnswerDTO)  {
         try {
             // Convert DTO to model
             List<Answer> answers = questionAnswerDTO.getAnswers();
@@ -31,7 +35,7 @@ public class QuestionService {
             // Question must have 1 correct answer
             int correctAnswersCount = (int) answers.stream().filter(Answer::isCorrect).count();
             if (correctAnswersCount != 1) {
-                throw new IllegalArgumentException("Question must have exactly 1 correct answer.");
+                throw new ValidationQuestion("Question must have exactly 1 correct answer.", new IllegalArgumentException());
             }
 
             try {
@@ -39,25 +43,25 @@ public class QuestionService {
                 for (var answer : answers) {
                     // validate answer
                     if (answer.getContentOption() == null || answer.getContentOption().isEmpty()) {
-                        throw new IllegalArgumentException("Answer content cannot be null or empty.");
+                        throw new ValidateAnswer("Answer content cannot be null or empty.", new IllegalArgumentException());
                     }
                     answer.setIdQuestion(questionCurrent.getIdQuestion());
                     Answer answerCurrent = answerDao.create(answer);
-                    if(answerCurrent == null) throw new RuntimeException("Question created failed");
+                    if (answerCurrent == null) throw new CreatingFailedQuestion("Question created failed");
                 }
-                return new QuestionAnswerDTO(questionCurrent.getContent(),answers,questionCurrent.getIdQuestion());
-            } catch (Exception e) {
-                throw new RuntimeException("Error creating question and answers in the database.", e);
-            }
-        } catch (IllegalArgumentException e) {
-            throw new RuntimeException("Invalid input data.", e);
+                return new QuestionAnswerDTO(questionCurrent.getContent(), answers, questionCurrent.getIdQuestion());
+            } catch (IllegalArgumentException e) {
+                throw e;
+        }
+        } catch (Exception e) {
+            throw e;
         }
     }
 
     private void validateQuestionAndAnswers(Question question, List<Answer> answers) {
         // Question must have 4 answer
         if (question == null || question.getContent() == null || answers == null || answers.size() != 4) {
-            throw new IllegalArgumentException("Invalid question or answers.");
+            throw new ValidationQuestion("Invalid question or answers.");
         }
     }
 
@@ -109,7 +113,7 @@ public class QuestionService {
 
             int correctAnswersCount = (int) newAnswers.stream().filter(Answer::isCorrect).count();
             if (correctAnswersCount != 1) {
-                throw new IllegalArgumentException("Question must have exactly 1 correct answer.");
+                throw new ValidationQuestion("Question must have exactly 1 correct answer.");
             }
 
 
@@ -136,7 +140,7 @@ public class QuestionService {
             throw e;
         }
         catch (Exception e){
-            throw new RuntimeException("Update failed Question due to database error");
+            throw e;
         }
     }
 

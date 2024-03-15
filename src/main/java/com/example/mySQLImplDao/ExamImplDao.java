@@ -1,7 +1,7 @@
 package com.example.mySQLImplDao;
 
 import com.example.CustomExceptionHandling.CreatingFailedExam;
-import com.example.CustomExceptionHandling.DeleteFaildExam;
+import com.example.CustomExceptionHandling.DeleteFailedExam;
 import com.example.CustomExceptionHandling.NotFoundExam;
 import com.example.DataSource.ConnectionPool;
 import com.example.CustomExceptionHandling.DuplicateUserException;
@@ -29,7 +29,7 @@ public class ExamImplDao implements ExamDao {
         }
         catch (SQLException e) {
             e.printStackTrace();
-            throw new DeleteFaildExam("Delete all exams of subject fail with subject's id: " + idSubject, e);
+            throw new DeleteFailedExam("Delete all exams of subject fail with subject's id: " + idSubject, e);
         }
         return false;    }
 
@@ -115,7 +115,7 @@ public class ExamImplDao implements ExamDao {
 
 
     @Override
-    public Exam create(Exam exam) throws DuplicateUserException {
+    public Exam create(Exam exam) {
         String query = "INSERT INTO exams (id_subject, name_exam, time_limit) VALUES (?, ?, ?)";
         try (Connection connection = ConnectionPool.getDataSource().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
@@ -156,7 +156,7 @@ public class ExamImplDao implements ExamDao {
         }
         catch (SQLException e) {
             e.printStackTrace();
-            throw new DeleteFaildExam("Delete Exam failed with exam's id: " + idExam, e);
+            throw new DeleteFailedExam("Delete Exam failed with exam's id: " + idExam, e);
         }
         return false;
     }

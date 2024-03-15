@@ -1,0 +1,10 @@
+
+m
+java:S11925"KDefine a constant instead of duplicating this literal "time_limit" 5 times.(‘€ŒÃûÿÿÿÿ8¾¹Û°ã1
+g
+java:S11924"JDefine a constant instead of duplicating this literal "name_exam" 5 times.(ßÁ¸»8¾¹Û°ã1
+h
+java:S11923"KDefine a constant instead of duplicating this literal "id_subject" 5 times.(Çƒ¿Ä8¾¹Û°ã1
+d
+java:S11922"HDefine a constant instead of duplicating this literal "id_exam" 4 times.(´ïÿ;8¾¹Û°ã1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºÌÚ˜ÿÿÿÿÿ8Ã¹Û°ã1

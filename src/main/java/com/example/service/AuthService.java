@@ -1,5 +1,7 @@
 package com.example.service;
 
+import com.example.CustomExceptionHandling.CreatingFailedExam;
+import com.example.CustomExceptionHandling.CreatingFailedUser;
 import com.example.CustomExceptionHandling.DuplicateUserException;
 import com.example.dao.UserDao;
 import com.example.entity.User;
@@ -22,15 +24,15 @@ public class AuthService {
 
             // save user
             User userCurrent = userDao.create(user);
-            if(userCurrent== null) throw new RuntimeException("Created user failed");
+            if(userCurrent== null) throw new CreatingFailedUser("Created user failed with user: " + user);
 
         } catch (DuplicateUserException e) {
             throw e;
         } catch (Exception e) {
             if (isDuplicateKeyException(e)) {
-                throw new DuplicateUserException("Duplicate key error. This user already exists.", e);
+                throw new DuplicateUserException(e.getMessage(), e);
             } else {
-                throw new RuntimeException("Registration failed due to a database error", e);
+                throw new CreatingFailedExam(e.getMessage(), e);
             }
         }
 
@@ -52,7 +54,7 @@ public class AuthService {
                 return user.getId_user();
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            throw e;
         }
         return -1;
     }

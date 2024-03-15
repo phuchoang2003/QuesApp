@@ -88,7 +88,7 @@ public class ResultImplDao implements ResultDao {
 
 
     @Override
-    public Result create(Result result) throws DuplicateUserException {
+    public Result create(Result result)  {
         String query = "INSERT INTO results (id_exam, score) VALUES (?, ?)";
         try (Connection connection = ConnectionPool.getDataSource().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {

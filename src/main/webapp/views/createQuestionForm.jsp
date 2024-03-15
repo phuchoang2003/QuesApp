@@ -160,6 +160,7 @@
 
 
         async function sendQuestionData(data) {
+
               const idSubject = localStorage.getItem("idSubject");
               const url = `http://localhost:8080/QuesApp/auth/questions?subject=${idSubject}`;
               const options = {
@@ -209,6 +210,8 @@
                             { contentOption: contentOpt4.value, isCorrect: isCorrectOpt4.checked },
                           ]
                     };
+
+                    console.log(question)
 
                     try {
                       const questionData = await sendQuestionData(question);

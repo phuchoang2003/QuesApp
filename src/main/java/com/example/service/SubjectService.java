@@ -1,6 +1,7 @@
 package com.example.service;
 
 
+import com.example.CustomExceptionHandling.CreatingFailedQuestion;
 import com.example.CustomExceptionHandling.DuplicateSubjectException;
 import com.example.dao.ExamDao;
 import com.example.dao.SubjectDao;
@@ -27,13 +28,13 @@ public class SubjectService {
             } else {
                 // Create the subject if it doesn't exist
                 Subject subjectCurrent = subjectDao.create(subject);
-                if(subjectCurrent == null) throw new RuntimeException("Create subject failed due to a database error");
+                if(subjectCurrent == null) throw new CreatingFailedQuestion("Create subject failed with subject: " + subject);
                 return subjectCurrent;
             }
         } catch (DuplicateSubjectException e) {
             throw e;
         } catch (Exception e) {
-            throw new RuntimeException("Create subject failed due to a database error", e);
+            throw new CreatingFailedQuestion("Create subject failed with subject: " + subject,e);
         }
     }
 

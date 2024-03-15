@@ -37,7 +37,7 @@ public class HistoryService {
 
         // Neu rong thi tra ve loi luon
         if(histories.isEmpty()){
-            throw new RuntimeException("History is empty");
+            throw new IllegalArgumentException("History is empty!");
         }
 
         // lay them thong tin result tuong ung voi cac lich su . result - history la moi quan he 1 : 1
@@ -53,11 +53,6 @@ public class HistoryService {
         // form data time
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS");
 
-
-        // his : 1(1) 2(1) 3(2)
-        // res : 1(1) 2(1) 3(2)
-        // exam :1(1) 2(1)
-        // subject: 1
 
         int size = results.size();
 

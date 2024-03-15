@@ -479,6 +479,7 @@
 
         // render ra mot cau
         function renderQuestion(data, indexCurrentQuestion){
+        try{
                // lay du lieu tu cau hoi hien tai
                const currentQuestion = data[indexCurrentQuestion];
 
@@ -504,6 +505,12 @@
                 i++;
 
                });
+               }
+               catch(error){
+               if(error.message === "Cannot read properties of undefined (reading 'idQuestion')"){
+                alert("Your list question is empty! Let's create some questions!");
+               }
+               }
         }
 
 

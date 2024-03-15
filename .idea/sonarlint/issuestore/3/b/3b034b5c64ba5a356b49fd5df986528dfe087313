@@ -1,13 +1,0 @@
-
-g	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(¿”ÚÃûÿÿÿÿ8§ıçôâ1
-b	java:S1125"FDefine and throw a dedicated exception instead of using a generic one.(ÙÙ¡²8©ıçôâ1
-g	java:S112T"FDefine and throw a dedicated exception instead of using a generic one.(¿”ÚÃûÿÿÿÿ8«ıçôâ1
-f
-java:S1192"IDefine a constant instead of duplicating this literal "password" 3 times.(‡ıªˆ8­ıçôâ1
-c
-java:S1192"FDefine a constant instead of duplicating this literal "email" 3 times.(ø‹¬¶8­ıçôâ1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºÌÚ˜ÿÿÿÿÿ8®ıçôâ1
-[
-java:S1854="9Remove this useless assignment to local variable "query".(ƒæ”¥øÿÿÿÿ8Ôıçôâ1
-L
-java:S1481="*Remove this unused "query" local variable.(ƒæ”¥øÿÿÿÿ8Øıçôâ1

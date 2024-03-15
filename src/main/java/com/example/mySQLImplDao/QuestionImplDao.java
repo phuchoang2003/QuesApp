@@ -132,6 +132,7 @@ public class QuestionImplDao implements QuestionDao {
             preparedStatement.setString(1, question.getContent());
             preparedStatement.setInt(2, question.getIdSubject());
 
+
             int affectedRows = preparedStatement.executeUpdate();
 
             if (affectedRows == 0) {

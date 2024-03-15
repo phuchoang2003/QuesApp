@@ -1,10 +1,12 @@
 package com.example.service;
 
+import com.example.CustomExceptionHandling.CreateFailedHistory;
+import com.example.CustomExceptionHandling.CreatingFailedExam;
+import com.example.CustomExceptionHandling.ValidationQuestion;
 import com.example.DTO.*;
 import com.example.dao.*;
 import com.example.entity.*;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
@@ -38,7 +40,7 @@ public class ExamService {
             List<String> questionIds = examQuestionIdsDTO.getQuestionIds();
             // phai co it nhat 1 question trong exam thi moi duoc tao
             if (questionIds == null || questionIds.isEmpty()) {
-                throw new IllegalArgumentException("Exam must have at least one question");
+                throw new ValidationQuestion("Exam must have at least one question!", new IllegalArgumentException());
             }
 
             List<Integer> listIds = questionIds.stream()
@@ -63,7 +65,7 @@ public class ExamService {
             }
 
             if (!allQuestionIdsValid) {
-                throw new IllegalArgumentException("Some question Id are invalid");
+                throw new ValidationQuestion("Some question Id are invalid!", new IllegalArgumentException());
             }
 
             Exam finalExam = examDao.create(exam);
@@ -72,10 +74,9 @@ public class ExamService {
 
             return new ExamQuestionIdsDTO(finalExam.getNameExam(), finalExam.getTimeLimit(), questionIds);
         } catch (IllegalArgumentException e) {
-            throw new RuntimeException(e.getMessage());
+            throw new ValidationQuestion(e.getMessage(),e);
         } catch (Exception e) {
-            e.printStackTrace();
-            throw new RuntimeException("Create exam failed due to a database error", e);
+            throw new CreatingFailedExam(e.getMessage(), e);
         }
     }
 
@@ -150,11 +151,13 @@ public class ExamService {
 
                 History currentHis = historyDao.create(history);
             }
-
+            else{
+                throw new CreateFailedHistory("Failed to create history!");
+            }
 
         }
         catch (Exception e){
-            throw new RuntimeException(e);
+            throw new CreateFailedHistory(e.getMessage(),e);
         }
     }
 

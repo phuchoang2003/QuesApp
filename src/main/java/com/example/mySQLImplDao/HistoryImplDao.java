@@ -89,7 +89,7 @@ public class HistoryImplDao implements HistoryDao {
 
 
     @Override
-    public History create(History history) throws DuplicateUserException {
+    public History create(History history)  {
         String query = "INSERT INTO history (id_result, start_time, end_time,id_user) VALUES (?, ?, ?, ?)";
         try (Connection connection = ConnectionPool.getDataSource().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
